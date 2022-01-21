@@ -19,6 +19,6 @@ git commit -m "${comment}"    # $1 是启动该脚本传来的参数，如 sh pu
 
 git remote set-url origin $GITHUB_REPO  
 
-git pull origin main
+git pull origin master
 
-git push -u origin main
+git push -u origin master
