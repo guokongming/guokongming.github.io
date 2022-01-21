@@ -17,10 +17,11 @@ git add -A
 
 git commit -m "${comment}"    # $1 是启动该脚本传来的参数，如 sh push.sh hello，其中 hello 就会插入到 $1 处，如果想两个参数，则加 $2
 
-git push -u origin $GITHUB_REPO  main 
+ git remote add origin ${GITHUB_REPO}
 
+git push -u origin master 
 
-
+git pull --rebase origin master 
 
 
 
