@@ -13,6 +13,6 @@ git add -A
 
 git commit -m "${comment}"    # $1 是启动该脚本传来的参数，如 sh push.sh hello，其中 hello 就会插入到 $1 处，如果想两个参数，则加 $2
 
-git push -u origin dev #建立远程分支 dev 和 关联本地dev和远程dev两步
+git push -u origin main #建立远程分支 main 和 关联本地main和远程main两步
 
  git push --set-upstream git@github.com:guokongming/guokongming.github.io.git main
