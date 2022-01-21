@@ -17,3 +17,4 @@ git commit -m "${comment}"    # $1 是启动该脚本传来的参数，如 sh pu
 
 git push $GITHUB_REPO   
 
+git push -u origin dev #建立远程分支 dev 和 关联本地dev和远程dev两步
