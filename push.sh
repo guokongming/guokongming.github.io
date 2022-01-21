@@ -3,8 +3,6 @@
 # 本脚本为自动部署的入口脚本(提交项目到 main 仓库的脚本)，只需执行该脚本，即可实现 GitHub 的自动部署，
 
 
-GITHUB_REPO=git@github.com:guokongming/guokongming.github.io.git
-
 comment=$1
 
 if [ ! $comment ]; then
@@ -17,4 +15,4 @@ git commit -m "${comment}"    # $1 是启动该脚本传来的参数，如 sh pu
 
 git push -u origin dev #建立远程分支 dev 和 关联本地dev和远程dev两步
 
-git push $GITHUB_REPO   
+ git push --set-upstream git@github.com:guokongming/guokongming.github.io.git main
