@@ -8,7 +8,7 @@ GITHUB_REPO=git@github.com:guokongming/guokongming.github.io.git
 comment=$1
 
 if [ ! $comment ]; then
-comment="更新内容"
+comment="更新源代码"
 fi
 
 git init  
@@ -17,11 +17,11 @@ git add -A
 
 git commit -m "${comment}"    # $1 是启动该脚本传来的参数，如 sh push.sh hello，其中 hello 就会插入到 $1 处，如果想两个参数，则加 $2
 
-git remote set-url origin $GITHUB_REPO  
+git remote set-url main $GITHUB_REPO  
 
-git pull origin master
+git pull main master
 
-git push -u origin master
+git push -u main master
 
 
 
